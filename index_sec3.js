@@ -46,6 +46,47 @@
 
 // If a customer has more than 100 points, they are 'gold' customer, otherwise, they are 'silver' customer
 
-let points = 90;
-let type = points > 100 ? 'gold' : 'silver'; // the ternary condition operator is this part: points > 100 ? 'gold' : 'silver'
-console.log(type)
+// let points = 90;
+// let type = points > 100 ? 'gold' : 'silver'; // the ternary condition operator is this part: points > 100 ? 'gold' : 'silver'
+// console.log(type)
+
+// Lets look at logical operators
+// 3 types: logical and logical or and not
+// logical AND (&&) if both operands are true
+
+// let highIncome = true;
+// let goodCreditScore = true;
+// let eligibleForLoan = highIncome && goodCreditScore
+// console.log(eligibleForLoan)
+
+// // Logical OR indicated by || 
+// let highIncome = false;
+// let goodCreditScore = false;
+// let eligibleForLoan = highIncome || goodCreditScore
+// console.log('Eligible', eligibleForLoan)
+
+// // NOT ! operator
+// let applicationRefused = !eligibleForLoan
+
+// console.log('Application Refused ', applicationRefused)
+
+//so far we use logical operators wtih boolean
+// but we can use logical operators with non boolean values
+
+// in logical operators JS tries to interpret values as truthy or falsy for eg fals || 'Mosh' wil give 'Mosh'
+// false || true will give true; flase || 1 will give 1 instead of just true
+
+// Falsy its not a boolean false what are these values: Undefined, null, 0, false '', NaN (not a number) all these values will be conisidered as falsey
+// anythin that is not Falsey will be considrered as Truthy
+// e.g. false || 'mosh'  looks at first operand and mosh is truthy (since its not in any of the falsy value) it will give the truthy value which is 'mohs' in this case
+
+// IMPORTANT: what happens with this false || 1 || 2 this will give 1. This is called short ciecuiting. As soon as it find an operand that is truthy that operand is returned
+// first truthy operand is 1 here . this is short circuiting
+
+// //Now lets see a real world example of where to use this
+
+// let userColor = undefined;
+// let defaultColor = 'blue';
+// let currentColor = userColor || defaultColor; //this means if we have a value for userColor we use it and if not we will use defaultColor;
+
+// console.log(currentColor)
