@@ -89,4 +89,55 @@
 // let defaultColor = 'blue';
 // let currentColor = userColor || defaultColor; //this means if we have a value for userColor we use it and if not we will use defaultColor;
 
-// console.log(currentColor)
+// console.log(currentColor);
+
+// The last group of operators we wanna look at is bitwise operators
+// we are gonna look at some CS stuff. 
+// 1 = 00000001 each digit is a bit, we have 8 bits
+// 2 = 00000010 if you add the bitwise operators of 1 and 2 yo will get 3
+// 3 = 00000011
+// bitwise operators work like the logic operators but on the individual bits
+// bitwise operation look sat individual 1s and 0s of the 8bit representation of a nubmer
+// bitwise oeprators are represented with single | and single & 
+//  console.log(1 | 2);  // gives 3 as output
+//what about bitwise and?
+// console.log(1 & 2);
+
+// Read, Write, Execute --> we wil define an access control ssytem 
+// 00000100
+// 00000110
+// 00000111
+
+// const readPermission = 4;
+// const writePermission = 2;
+// const executePermission = 1;
+
+// let myPermission = 0;
+// myPermission = myPermission | writePermission ;
+
+// let message = (myPermission & readPermission) ? 'yes' : 'no';
+
+// console.log(message);
+
+// Operator precedence
+
+// let x = (2+3)*4
+// console.log(x)
+
+// let x = 10;
+// let y = (x>5) && (x<15)
+// console.log(y)
+
+// let x = 1;
+// let y = x!==2;
+// console.log(y);
+
+
+let a = 'red';
+let b = 'blue';
+let temp = b;
+b = a;
+a = temp;
+
+console.log(a);
+console.log(b);
