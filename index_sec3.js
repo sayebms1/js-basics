@@ -133,11 +133,14 @@
 // console.log(y);
 
 
-let a = 'red';
-let b = 'blue';
-let temp = b;
-b = a;
-a = temp;
+// let a = 'red';
+// let b = 'blue';
+// let temp = b;
+// b = a;
+// a = temp;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+
+
+math.kldivergence([0.7, 0.5, 0.4],[0.2, 0.9, 0.5])
